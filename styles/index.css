@@ -458,8 +458,63 @@ body {
   transform: translate(50%, 25%);
 }
 
-/* careers styles */
-.careers-section {
+/* career styles */
+.career-section {
   margin-top: 14.4rem;
-  padding: 9.6rem;
+  margin-bottom: 9.6rem;
+  background-color: var(--primary-color);
+}
+
+.career-container {
+  /* padding-inline: 9.6rem; */
+  padding-left: 11.2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.career-content-box h2 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.career-description {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 2.4rem;
+}
+
+.career-options {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 2.8rem;
+}
+
+.career-option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-img-box img {
+  width: 100%;
+}
+
+.btn.btn--career {
+  color: var(--primary-color);
+  position: relative;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 12px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn--career:hover,
+.btn.btn--career:active {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px 2px rgba(0, 0, 0, 0.24);
 }
