@@ -44,7 +44,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 :root {
@@ -64,6 +63,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--text-grey);
+}
+
+.wrapper-container {
   overflow-x: hidden;
 }
 
@@ -72,10 +74,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8rem;
-  padding-inline: 8rem;
+  padding: 3.2rem 8rem;
   box-shadow: 0 3px 6px rgba(0 0 0 / 0.03);
-  position: relative;
 }
 
 .logo {
@@ -244,7 +244,7 @@ body {
   font-size: 4.4rem;
   letter-spacing: -0.65px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.05;
   text-transform: uppercase;
 }
 
@@ -368,10 +368,6 @@ body {
 }
 
 /* discover styles */
-.discover-section {
-  margin-bottom: 9.6rem;
-}
-
 .discover-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -379,16 +375,8 @@ body {
   align-items: center;
 }
 
-.discover-content-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  text-align: right;
-}
-
-.discover-content-box .secondary-heading,
-.section-description {
+.discover-content-box > .secondary-heading,
+.discover-content-box > .section-description {
   text-align: right;
 }
 
@@ -420,4 +408,58 @@ body {
   max-width: 30rem;
   max-height: 32rem;
   transform: translate(-50%, 25%);
+}
+
+/* experience styles */
+.experience-section {
+  margin-top: 14.4rem;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.experience-content-box > .secondary-heading,
+.experience-content-box > .section-description {
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.experience-img-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.experience-img-container {
+  width: 70%;
+  position: relative;
+}
+
+.experience-img-container img {
+  width: 100%;
+}
+
+.experience-img-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/experience-2.png");
+  background-position: center;
+  background-size: contain;
+  width: 25rem;
+  height: 27rem;
+  background-repeat: no-repeat;
+  max-width: 30rem;
+  max-height: 32rem;
+  transform: translate(50%, 25%);
+}
+
+/* careers styles */
+.careers-section {
+  margin-top: 14.4rem;
+  padding: 9.6rem;
 }
