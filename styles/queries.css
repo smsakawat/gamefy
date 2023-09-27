@@ -83,6 +83,12 @@
     grid-template-columns: 1fr;
     gap: 6.4rem;
   }
+
+  .career-content-box h2,
+  .career-content-box .career-description,
+  .btn--career-wrapper {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -109,7 +115,7 @@
   }
 
   .content-container .btn--primary {
-    margin-right: 3.2rem !important;
+    margin-right: 3.2rem;
   }
 
   .gamefy-intro-section {
@@ -144,12 +150,6 @@
     gap: 6.4rem;
   }
 
-  .discover-content-box,
-  .experience-content-box {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .discover-content-box > .secondary-heading,
   .discover-content-box > .section-description,
   .experience-content-box > .secondary-heading,
@@ -162,12 +162,17 @@
     justify-content: center;
   }
 
+  .discover-img-container,
+  .experience-img-container {
+    width: 70%;
+  }
+
   .discover-img-container::after,
   .experience-img-container::after {
-    width: 15rem;
-    height: 17rem;
-    max-width: 20rem;
-    max-height: 22rem;
+    width: 10rem;
+    height: 12rem;
+    max-width: 14rem;
+    max-height: 16rem;
   }
 
   .game-categories {
@@ -210,9 +215,14 @@
   }
 
   .video-item {
+    display: inline-block;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .video-item a {
+    width: 80%;
   }
 
   .career-description {
@@ -223,13 +233,12 @@
     font-size: 1.4rem;
   }
 
-  .footer-navigations {
-    flex-basis: calc(33.33% - 3.2rem);
+  .game-categories {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
-  .social-navigations {
-    flex-basis: calc(33.33% - 3.2rem);
-  }
-  .footer-special-links {
-    flex-basis: calc(50% - 3.2rem);
+
+  .game-category:nth-child(6) {
+    grid-column: 2;
   }
 }
