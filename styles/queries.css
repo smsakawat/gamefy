@@ -222,4 +222,14 @@
   .career-options {
     font-size: 1.4rem;
   }
+
+  .footer-navigations {
+    flex-basis: calc(33.33% - 3.2rem);
+  }
+  .social-navigations {
+    flex-basis: calc(33.33% - 3.2rem);
+  }
+  .footer-special-links {
+    flex-basis: calc(50% - 3.2rem);
+  }
 }

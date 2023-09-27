@@ -233,6 +233,9 @@ body {
   letter-spacing: -0.9px;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
+}
+
+.goat-text {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -366,7 +369,7 @@ body {
 /* discover styles */
 .discover-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 3.2rem;
   align-items: center;
 }
@@ -413,7 +416,7 @@ body {
 
 .experience-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 3.2rem;
   align-items: center;
 }
@@ -580,7 +583,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  gap: 3.2rem;
 }
 
 .footer-section a:link,
@@ -588,42 +591,68 @@ body {
   text-decoration: none;
 }
 
-.footer-section .footer-links {
+.footer-section ul {
   list-style: none;
+}
+
+.footer-section .footer-links {
   font-size: 1.6rem;
   font-weight: 600;
   display: flex;
+  flex-wrap: wrap;
   gap: 2.4rem;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-links a:link,
 .footer-links a:visited {
   color: #ffffffdb;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.2s linear;
 }
 
 .footer-links a:hover {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline currentColor;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  flex-wrap: wrap !important;
+  justify-content: center;
+}
+
+.social-links img {
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: transform 0.2s ease-in;
+}
+
+.social-links img:hover {
+  transform: scale(0.8);
 }
 
 .special-links {
-  list-style: none;
   font-size: 1.4rem;
   font-weight: 500;
   display: flex;
-  gap: 2.4rem;
   align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  flex-wrap: wrap;
 }
 
 .special-links a:link,
 .special-links a:visited {
   color: rgba(255, 255, 255, 0.6);
-  transition: color 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 .special-links a:hover {
-  color: rgba(255, 255, 255, 0.274);
+  color: rgba(255, 255, 255, 0.406);
+  text-decoration: underline currentColor;
 }
 
 .footer-text {

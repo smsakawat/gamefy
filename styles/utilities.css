@@ -88,31 +88,6 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid-center--h {
-  justify-content: center;
-}
-
-.grid-center--v {
-  align-items: center;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-center--h {
-  justify-content: center;
-}
-
-.flex-center--v {
-  align-items: center;
-}
-
-.flex-center--vh {
-  justify-content: center;
-  align-items: center;
-}
-
 /* spacings */
 .mt-xsm {
   margin-top: 1.6rem;
@@ -152,10 +127,6 @@
 
 .mb-xlg {
   margin-bottom: 9.6rem;
-}
-
-.mb-xlg {
-  margin-bottom: 6.4rem;
 }
 
 .mr-sm {
