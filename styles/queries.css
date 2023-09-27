@@ -101,7 +101,7 @@
   }
 
   .primary-heading {
-    font-size: 3.2rem;
+    font-size: 6.4rem;
   }
 
   #heading-dark-text {
@@ -137,8 +137,8 @@
     text-align: center;
   }
 
-  .intro-content-box .secondary-heading,
-  .section-description {
+  .intro-content-box > .secondary-heading,
+  .intro-content-box > .section-description {
     text-align: center;
   }
 
@@ -179,6 +179,7 @@
 
   .game-categories {
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 
   .game-category:nth-child(6) {
@@ -189,6 +190,22 @@
 @media only screen and (max-width: 576px) {
   html {
     font-size: 50%;
+  }
+
+  .hero-content-box {
+    padding: 0 4.8rem 8rem 4.8rem;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+
+  .primary-heading .goat {
+    font-size: 6.4rem;
+  }
+
+  .secondary-heading {
+    font-size: 3.6rem;
   }
 
   .header-section {
@@ -202,6 +219,10 @@
   .hero-content-box {
     padding: 6.4rem;
     background-size: cover;
+  }
+
+  .content-container .btn--primary {
+    margin-right: 3.2rem;
   }
 
   .grid--4-cols {
@@ -220,7 +241,12 @@
   }
 
   .video-item a {
-    width: 80%;
+    width: 85%;
+  }
+
+  .video-item .video-title {
+    text-align: center;
+    width: 85%;
   }
 
   .experience-section,
@@ -247,6 +273,11 @@
 
   .game-category:nth-child(6) {
     grid-column: 2;
+  }
+
+  .game-category > img {
+    width: 4rem;
+    height: 4rem;
   }
 
   .footer-section {
