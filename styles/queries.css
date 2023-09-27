@@ -118,7 +118,9 @@
     margin-right: 3.2rem;
   }
 
-  .gamefy-intro-section {
+  .gamefy-intro-section,
+  .videos-section,
+  .games-section {
     margin-bottom: 8rem;
   }
 
@@ -202,10 +204,6 @@
     background-size: cover;
   }
 
-  .videos-section {
-    margin-bottom: 8rem;
-  }
-
   .grid--4-cols {
     grid-template-columns: 1fr;
   }
@@ -225,6 +223,15 @@
     width: 80%;
   }
 
+  .experience-section,
+  .career-section {
+    margin-top: 11.2rem;
+  }
+
+  .career-section > .career-container {
+    padding: 6.4rem;
+  }
+
   .career-description {
     font-size: 1.6rem;
   }
@@ -240,5 +247,9 @@
 
   .game-category:nth-child(6) {
     grid-column: 2;
+  }
+
+  .footer-section {
+    padding: 8rem;
   }
 }
