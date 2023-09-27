@@ -292,10 +292,6 @@ body {
   text-align: right;
 }
 
-.intro-content-box > p {
-  margin-bottom: 3.2rem;
-}
-
 .purpose-text {
   color: var(--text-grey);
   font-size: 2rem;
@@ -565,4 +561,75 @@ body {
   border-radius: var(--standard-border-radius);
   box-shadow: inset 0 0 0 2px var(--primary-color);
   color: var(--primary-color);
+}
+
+/* footer section */
+.footer-section {
+  padding: 9.6rem;
+  background: #780206; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #061161, #780206);
+  background: linear-gradient(to right, #061161, #780206);
+}
+
+.footer-section .logo-text {
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.footer-section a:link,
+.footer-section a:visited {
+  text-decoration: none;
+}
+
+.footer-section .footer-links {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+  color: #ffffffdb;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.special-links {
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.special-links a:link,
+.special-links a:visited {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s linear;
+}
+
+.special-links a:hover {
+  color: rgba(255, 255, 255, 0.274);
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
 }
